@@ -99,11 +99,11 @@ class syntax_plugin_dokuflashcard extends SyntaxPlugin
  
                 case DOKU_LEXER_UNMATCHED :  
 					
-                    $renderer->doc .= $renderer->_xmlEntities(''); 
+                    $renderer->doc .= $renderer->_xmlEntities($match); 
 					
                     break;
                 case DOKU_LEXER_EXIT :       
-                    $renderer->doc .= '</div>'.$match; 
+                    $renderer->doc .= '</div>'; 
                     break;
 		
 		
