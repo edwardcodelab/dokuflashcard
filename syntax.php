@@ -90,8 +90,8 @@ class syntax_plugin_dokuflashcard extends SyntaxPlugin
                     $renderer->doc .= '<div id="cardpanel" class="unflipped"  onclick="flipcard()">Start!</div>';
 					$renderer->doc .= '
 					<div class="fbuttoncontainer">
-					<button class="flashcardbutton" onclick="oldcard()">back</button>
-					<button class="flashcardbutton" onclick="startcard()">start</button>
+					<button class="flashcardbutton" onclick="startcard()">start</button>				
+     					<button class="flashcardbutton" onclick="oldcard()">back</button>
 					<button class="flashcardbutton" onclick="newcard()">next</button>
 					</div>';
 					$renderer->doc .= '<div id = "carddata">'; 
