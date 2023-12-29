@@ -48,7 +48,7 @@ function oldcard(){
 
 function startcard(){
 	
-		console.log(jQuery('#carddata').text());
+	console.log(jQuery('#carddata').text());
 	cardarray = jQuery('#carddata').text().split("^");
 	console.log(cardarray);
 	cardarraybr = cardarray.map((value) => value.split('|'));
@@ -56,3 +56,23 @@ function startcard(){
 	jQuery("#cardpanel").text(cardarraybr[cardcount][0]); 
 	
 }
+
+
+function randomcard(){
+  cardcount = rand(cardarraybr);
+  jQuery("#cardpanel").text(cardarraybr[cardcount][0]); 
+  jQuery("#cardpanel").addClass('unflipped').removeClass('flipped');
+  frontback = 1
+}
+
+
+
+
+function rand(items) {
+    // "|" for a kinda "int div"
+    return items.length * Math.random() | 0;
+}
+
+
+
+
