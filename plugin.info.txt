@@ -1,7 +1,7 @@
 base   dokuflashcard
 author dodotori@dokuwikiforum
 email  dodotori@dokuwikiforum
-date   2023-12-25
+date   2025-2-25
 name   dokuflashcard plugin
 desc   to create flashcard deck
 url    https://www.dokuwiki.org/plugin:dokuflashcard
