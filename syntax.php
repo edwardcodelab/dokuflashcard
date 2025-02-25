@@ -95,12 +95,13 @@ class syntax_plugin_dokuflashcard extends SyntaxPlugin
      					<button class="flashcardbutton" onclick="oldcard()">back</button>
 					<button class="flashcardbutton" onclick="newcard()">next</button>
 					</div>';
-					$renderer->doc .= '<div id = "carddata">'; 
+					//$renderer->doc .= '<div id = "carddata">'; 
                     break;
  
                 case DOKU_LEXER_UNMATCHED :  
 					
-                    $renderer->doc .= $renderer->_xmlEntities($match); 
+                $renderer->doc .= '<div class="carddata">' . $renderer->_xmlEntities($match) . '</div>';
+
 					
                     break;
                 case DOKU_LEXER_EXIT :       
